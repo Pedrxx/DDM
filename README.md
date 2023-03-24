@@ -21,8 +21,8 @@
 
 ### Contato 
 
-*👨‍🏫 Hélio Toshio Kamakawa
-*📧 helio.kamakawa@ifpr.edu.br
-*📱 +55 (44) 8447-2831
-*⚓ https://github.com/heliokamakawa
+* 👨‍🏫 Hélio Toshio Kamakawa
+* 📧 helio.kamakawa@ifpr.edu.br
+* 📱 +55 (44) 8447-2831
+* ⚓ https://github.com/heliokamakawa
 
