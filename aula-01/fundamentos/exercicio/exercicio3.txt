@@ -1,0 +1,22 @@
+1) Em relação a sintaxe, quais são as variantes na escrita de uma função? Quais são as especificidades e em que caso pode-se utilziar cada uma?
+
+Na última aula, de forma prática, aprendemos 4 tipos de variantes na escrita de uma função:
+
+    A) Função com retorno e com parâmetros:
+    A melhor sintaxe, na minha opinião. Com uma função que tem essa sintaxe você pode escrever um bloco de código uma vez e pode reutilizá-lo 
+    várias vezes, organização do código, e além disso você vai poder personalizar sua função de acordo com o que precisa;
+
+    B) Função com retorno e sem parâmetro:
+    Esse tipo de sintaxe tem as vantagens e desvantagens. Pode ter uma simplificação de código e pode causar menos erros pois não dependem de 
+    valores de entrada, ou seja, valores externos. Porém, uma função com esse tipo de sintaxe terá uma limitação por não tratar valores externos
+    e uma dificuldade na manutenção;
+
+    C) Função sem retorno e com parâmetro
+    Com essa sintaxe você ganha pouca eficiência pois como essa função trata apenas dados de entrada e não tem a necessidade de tratar o retorno,
+    logo é mais díficil retornar algum valor incorreto. Porém, ela terá restrição de uso e não poderá ser utilizada em outras situações em que
+    a saída deverá ser retornada.
+
+    D) Função sem retorno e sem parâmetro
+    Sem dúvida, uma das mais eficientes pois não precisa processar ou retornar um valor específico, não é bom? Não! Ela se tornará uma vilã dentro
+    do projeto. Uma função com essa sintaxe tem limitações em seu uso, a manutenção futura fica comprometida se caso os dados que estão dentro da
+    função venham a mudar, e claro a sua reutilização dentro sistema é limitada podendo servir em apenas algumas questões.

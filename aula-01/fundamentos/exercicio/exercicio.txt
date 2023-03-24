@@ -1,0 +1,194 @@
+01) O que são variáveis? Qual é a sintaxe da declaração? Escreva o código de exemplo.
+02) Quais são os tipos de variáveis existentes em Dart? Explique a diferença entre os tipos. 
+03) O que é interpolação? Qual a sua função? Escreva o código de exemplo.
+04) Qual a diferença entre a declaração com e sem atribuição?
+05) Quais são os cuidados que devemos ter para definir o nome de uma variável?
+06) Quais são as regras de sintaxe para declarar uma variável?
+07) Qual padrão devemos respeitar para definir nomes de variáveis? Escreva o código de exemplo.
+08) O que é e para que serve a inferência de tipos? Escreva o código de exemplo.
+09) Qual a diferença entre a definição explícita e a inferência de tipos? Em que contexto deve-se utilizar 
+cada uma? Escreva o código de exemplo.
+10) Pode-se afirmar que, a declaração com a inferência de tipos gera-se uma variável dinâmica? Justifique.
+11) O que são variáveis dinâmicas? Quais cuidados devemos ter?
+12) Em dart, pode-se definir constantes de quais maneiras? Explique as diferenças e quando devemos utilizar cada uma.
+13) Solicite 3 números e informe: (1) a média de todos os números; (2) o maior valor; 
+e (4) a soma de todos os números.
+14) Pense em um pequeno algoritmo que solicite dados de um usuário (todas do tipo String), de modo que, 
+seja necessário realizar todas as conversões de dados.
+15) Escreve um código que exemplifique a diferença semântica entre const e final.
+
+
+01) Variáveis são espaços na memória reservados para armazenar valores que podem ser alterados ao longo 
+da execução do programa. A sintaxe para declarar uma variável em Dart é "tipoDeDado nomeDaVariavel = valorInicial;",
+onde "tipoDeDado" é o tipo de dado que a variável irá armazenar, "nomeDaVariavel" é o nome escolhido para a 
+variável e "valorInicial" é o valor inicial que a variável irá armazenar.
+
+int idade = 27;
+String nome = "Maria";
+double salario = 1500.50;
+
+
+02) Em Dart existem três tipos de variáveis:
+
+Variáveis numéricas (int, double): armazenam valores numéricos, inteiros ou decimais;
+Variáveis booleanas (bool): armazenam valores verdadeiro ou falso;
+Variáveis de texto (String): armazenam textos.
+
+A diferença entre os tipos está na forma como os valores são armazenados e no que pode ser feito com eles. 
+As variáveis numéricas e booleanas podem ser usadas em operações matemáticas e lógicas, enquanto as variáveis 
+de texto são mais úteis para armazenar informações em formato de texto.
+
+
+03) Interpolação é uma forma de incluir variáveis dentro de uma string, permitindo a criação de 
+mensagens mais dinâmicas e personalizadas. Para isso, basta colocar o símbolo $ antes do nome da variável 
+que se deseja incluir. 
+
+String nome = "Maria";
+int idade = 27;
+print("Meu nome é $nome e eu tenho $idade anos.");
+
+
+04) A declaração com atribuição é quando uma variável é criada e já recebe um valor inicial, 
+enquanto a declaração sem atribuição é quando a variável é criada, mas não recebe nenhum valor inicial. 
+A diferença é que na primeira forma, a variável já tem um valor associado a ela, enquanto na segunda forma, é
+necessário atribuir um valor posteriormente.
+
+int idade = 27; // declaração com atribuição
+int altura; // declaração sem atribuição
+altura = 170; // atribuição posterior
+
+
+05) Ao definir o nome de uma variável, devemos escolher um nome que seja descritivo e que represente bem 
+o que a variável armazena. É importante evitar nomes muito genéricos ou muito curtos, pois isso pode dificultar a 
+leitura do código. Além disso, o nome da variável não pode começar com números ou caracteres especiais, e não pode 
+conter espaços em branco. O uso de letras maiúsculas e minúsculas pode ajudar a tornar o nome mais legível.
+
+// nome ruim
+int n = 10;
+
+// nome bom
+int quantidadeDeAlunos = 10;
+
+06) As regras de sintaxe para declarar uma variável em Dart são:
+O nome da variável deve começar com uma letra ou underscore (_) seguido por zero ou mais letras, números.
+O nome da variável não pode começar com um número.
+O nome da variável não pode conter espaços em branco ou caracteres especiais, exceto o underscore (_).
+As variáveis são sensíveis a maiúsculas e minúsculas.
+
+07) O padrão que deve ser respeitado ao definir nomes de variáveis em Dart é o camelCase. 
+Esse padrão consiste em escrever o nome da variável com a primeira palavra em minúscula e 
+as palavras seguintes em maiúscula.
+
+String nomeCompleto = "João da Silva";
+int idadeUsuario = 25;
+
+08) Inferência de tipos é um recurso em Dart que permite ao compilador inferir o tipo de uma variável 
+com base no valor atribuído a ela. Isso significa que não é necessário declarar o tipo de uma variável 
+explicitamente. A inferência de tipos é útil porque torna o código mais conciso e legível.
+
+var nome = "João da Silva"; // o tipo da variável 'nome' é inferido como String
+var idade = 25; // o tipo da variável 'idade' é inferido como int
+
+09) A definição explícita é quando o tipo de uma variável é declarado explicitamente na sua declaração. 
+Já a inferência de tipos é quando o compilador infere o tipo da variável com base no valor atribuído a ela. 
+A escolha entre essas duas abordagens depende do contexto e da preferência pessoal do programador. 
+Em geral, a definição explícita é recomendada quando o tipo da variável é importante ou quando 
+se quer deixar o código mais claro, enquanto a inferência de tipos é recomendada quando a ênfase está na 
+legibilidade e na concisão do código.
+
+// Definição explícita:
+String nome = "João da Silva";
+int idade = 25;
+
+// Inferência de tipos:
+var nome = "João da Silva"; // o tipo da variável 'nome' é inferido como String
+var idade = 25; // o tipo da variável 'idade' é inferido como int
+
+
+10) Não, a inferência de tipos em Dart não gera variáveis dinâmicas. 
+Na verdade, a inferência de tipos é uma forma de declarar variáveis com tipos estáticos, 
+em que o compilador deduz o tipo da variável com base no valor atribuído a ela na declaração.
+
+11) Variáveis dinâmicas são aquelas que podem ter seu tipo alterado durante a execução do programa. 
+Em Dart, isso é possível através do tipo 'dynamic'. O cuidado que deve ser tomado com o uso de variáveis 
+dinâmicas é que elas podem afetar negativamente o desempenho e a segurança do programa, uma vez que o 
+compilador não pode inferir o tipo de variável e, portanto, não pode fazer otimizações de código específicas 
+para aquele tipo.
+
+12) Em Dart, pode-se definir constantes utilizando as palavras-chave 'const' e 'final'. 
+A diferença entre elas é que as constantes declaradas com 'const' são resolvidas em tempo de compilação, 
+enquanto as constantes declaradas com 'final' são resolvidas em tempo de execução.
+
+Deve-se utilizar a palavra-chave 'const' quando se sabe que o valor da constante será conhecido em 
+tempo de compilação e nunca mudará. Já a palavra-chave 'final' é utilizada quando o valor da constante 
+só será conhecido em tempo de execução, mas nunca será alterado.
+
+13) 
+import 'dart:io';
+
+void main() {
+  int num1, num2, num3;
+  
+  // Solicita os três números ao usuário
+  print('Digite o primeiro número:');
+  num1 = int.parse(stdin.readLineSync()!);
+  
+  print('Digite o segundo número:');
+  num2 = int.parse(stdin.readLineSync()!);
+  
+  print('Digite o terceiro número:');
+  num3 = int.parse(stdin.readLineSync()!);
+  
+  // Calcula a média dos números
+  double media = (num1 + num2 + num3) / 3;
+  print('A média é: $media');
+  
+  // Encontra o maior número
+  int maior = num1;
+  if (num2 > maior) {
+    maior = num2;
+  }
+  if (num3 > maior) {
+    maior = num3;
+  }
+  print('O maior número é: $maior');
+  
+  // Calcula a soma dos números
+  int soma = num1 + num2 + num3;
+  print('A soma é: $soma');
+}
+
+14) 
+import 'dart:io';
+
+void main() {
+  stdout.write("Digite seu nome: ");
+  String nome = stdin.readLineSync()!;
+  
+  stdout.write("Digite sua idade: ");
+  int idade = int.parse(stdin.readLineSync()!);
+  
+  stdout.write("Digite sua altura: ");
+  double altura = double.parse(stdin.readLineSync()!);
+  
+  print("Nome: $nome");
+  print("Idade: $idade");
+  print("Altura: $altura");
+}
+
+15) 
+void main() {
+  const x = 5;
+  final y = x * 2;
+  
+  print(y); // output: 10
+  
+  // x = 10; // erro: const variables can't be assigned a value
+  
+  final z = [1, 2, 3];
+  z.add(4); // é permitido modificar uma lista definida como final
+  
+  const w = [1, 2, 3];
+  // w.add(4); // erro: Unsupported operation: Cannot add to an unmodifiable list
+}
+
