@@ -1,0 +1,39 @@
+01 - Quais são as opções de importação do StatelessWidget? Explique as diferenças.
+
+Existem duas opções de importação para o StatelessWidget:
+
+import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+A diferença entre as duas é que a primeira opção importa widgets de material design do Flutter, enquanto a segunda opção importa widgets de estilo iOS. A escolha entre essas duas opções depende do design do aplicativo que você está desenvolvendo e da plataforma que deseja suportar.
+
+02 - No método build, é possível definir o parâmetro sem o tipo? Se sim, qual seria melhor (com ou sem a definição do tipo)?
+
+Sim, é possível definir o parâmetro sem o tipo no método build. No entanto, é recomendável que você especifique o tipo do parâmetro, pois isso ajuda a evitar erros de compilação e torna o código mais legível.
+
+Em relação ao Home:
+
+01 - Explique em detalhes, o title (o que é, de quem é, como é, o que se espera)?
+
+O title é um parâmetro que pode ser definido ao criar um Scaffold no Flutter. Ele é usado para especificar o título da barra de aplicativos (ou AppBar) que é exibida na parte superior da tela. O título pode ser uma string simples ou um widget que exibe um texto formatado ou uma imagem.
+
+02 - Em relação ao código acima, quantos objetos foram criados? Justifique.
+
+No código acima, apenas um objeto foi criado, que é uma instância da classe MyApp. No entanto, ao executar o método runApp, o Flutter criará internamente vários outros objetos, como o objeto MaterialApp e o objeto Home.
+
+03 - Por que utilizou-se const no construtor da classe? Qual vantagem?
+
+O uso de const no construtor da classe permite que o objeto seja criado em tempo de compilação em vez de tempo de execução. Isso pode melhorar o desempenho do aplicativo, pois o Flutter não precisa criar o objeto em tempo de execução toda vez que é necessário. Além disso, objetos criados com const são imutáveis, o que pode ajudar a evitar bugs em potencial.
+
+04 - Em que caso não devemos utilizar const no construtor da classe?
+
+Não devemos utilizar const no construtor da classe se a classe tiver propriedades que não podem ser determinadas em tempo de compilação, como uma propriedade que depende de um valor retornado por uma chamada de API ou de um valor dinâmico.
+
+05 - O que é e para que serve o key?
+
+A chave (key) é uma propriedade opcional que pode ser definida em um widget do Flutter. Ela é usada para identificar exclusivamente um widget em uma hierarquia de widgets. A chave é útil quando você precisa atualizar a hierarquia de widgets e deseja manter o estado de um widget específico. Por exemplo, se você estiver atualizando uma lista, poderá manter o estado de um widget específico (como o estado de rolagem) usando uma chave.
+
+06 - Em relação ao Scaffold:
+
+(a) Todos os parâmetros que definimos no construtor do Scaffold são obrigatórios? Explique.
+
+Não, nem todos os parâmetros definidos no construtor do Scaffold são obrigatórios. O único parâmetro obrigatório é o body
