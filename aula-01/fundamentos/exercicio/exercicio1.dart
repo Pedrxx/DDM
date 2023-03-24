@@ -8,8 +8,6 @@ void main(List<String> arguments) {
 
   print("Calcule o seu salário\n");
 
-  //#region -------------------Usar para a função calcularSalario()-------------------
-
   print("Informe o valor do salário:");
   valorSalario = double.parse(stdin.readLineSync()!);
 
@@ -19,14 +17,7 @@ void main(List<String> arguments) {
   //print(calcularSalario(valorSalario, valorDesconto));
   calcularSalarioQuatro(valorSalario, valorDesconto);
 
-  //#endregion -------------------Usar para a função calcularSalario()-------------------
 
-  //#region -------------------Usar para a função calcularSalarioDois() e calcularSalarioTres()-------------------
-
-  //calcularSalarioDois();
-  //print(calcularSalarioTres());
-
-  //#endregion -------------------Usar para a função calcularSalarioDois() e calcularSalarioTres()-------------------
 }
 
 // Função com retorno e com parâmetro
