@@ -1,0 +1,74 @@
+1)Implemente a navegação de pelo menos 10 widgets do SEU projeto. 
+ - Lembre-se que o projeto deve ser único, relevante e coerente - deve estar validada pelo professor!
+ - De prioridade na lógica de navegação e no sentido dos widgets - por enquanto não precisa "desenhar" completamente;
+ - Se der tempo, vai tentando implementar e caso não consiga, faça a prototipação por meio de outro recurso (pode ser no caderno).
+
+2)Em flutter, o que é rotas (Route)? Para que serve?
+    Rotas (Routes) em Flutter são usadas para gerenciar a navegação entre as telas do aplicativo. 
+    Elas permitem que o usuário navegue entre diferentes telas de forma organizada e intuitiva, 
+    além de possibilitar o compartilhamento de dados entre as telas.
+
+3)Para definir uma rota (Route) é necessário utilizar qual classe? O construtor requer parâmetro 
+(se sim, indique o tipo e objetivo)?
+    Para definir uma rota (Route) em Flutter, é necessário utilizar a classe MaterialPageRoute. 
+    O construtor desta classe requer um parâmetro obrigatório do tipo WidgetBuilder, 
+    que é uma função que retorna um widget da tela que será exibida. 
+    O objetivo desta classe é criar uma transição suave entre a tela atual e a nova tela 
+    que será exibida quando o usuário navegar entre as rotas.
+
+4)Em flutter, o que é necessário para implementar uma "navegação"?
+    Definir as rotas: Cada tela do aplicativo precisa ser definida como uma rota usando a classe MaterialPageRoute. 
+
+    Criar os botões de navegação: Na tela de origem, devem ser criados botões ou links que acionem a 
+    navegação para outras telas.
+
+    Navegar para a próxima tela: Quando o usuário clicar em um botão ou link, é necessário chamar o 
+    método Navigator.push com o nome da rota correspondente.
+
+5)Quais são os principais métodos de navegação? Explique detalhadamente a assinatura do método.
+    Navigator.push: Navega para uma nova tela, empilhando-a em cima da tela atual. 
+    A assinatura deste método é a seguinte: Future<T?> push<T extends Object?>(Route<T> route). 
+    O parâmetro route é a rota que será navegada, definida como uma instância da classe Route.
+
+    Navigator.pushReplacement: Navega para uma nova tela e substitui a tela atual pela nova. 
+    A assinatura deste método é a seguinte: Future<T?> pushReplacement<T extends Object?, 
+    TO extends Object?>(Route<T> newRoute, { TO? result }). O parâmetro newRoute é a rota que será navegada, 
+    definida como uma instância da classe Route. O parâmetro opcional result é o valor de 
+    retorno que será enviado de volta para a tela anterior quando a nova tela for encerrada.
+
+    Navigator.pushNamed: Navega para uma nova tela, identificada pelo nome da rota. A 
+    assinatura deste método é a seguinte: Future<T?> pushNamed<T extends Object?>(String routeName, 
+    { Object? arguments }). O parâmetro routeName é o nome da rota que será navegada, definido como uma string. 
+    O parâmetro opcional arguments é um objeto que pode ser utilizado para passar dados para a nova tela.
+
+6)O "context" é necessário para realizar uma das operações do Navigator. Neste contexto, qual é o seu tipo e para por qual motivo ele é necessário?
+    O context é um objeto que representa o contexto atual da aplicação em Flutter. 
+    Ele é necessário para realizar muitas das operações relacionadas à navegação usando o Navigator, 
+    pois é através do context que o Navigator tem acesso ao BuildContext
+
+7)Exemplifique (sem copiar e colar) o uso de Navigator com e sem a referência anônima. Na sua opinião: qual a diferença? qual é a mais fácil? é possível entender as duas?
+
+8)Qual a diferença entre push e pushReplacedNamed? Em que caso utilizamos cada uma?
+    O método push adiciona uma nova rota à pilha de rotas do Navigator, 
+    empilhando a nova rota acima da rota atual. Isso significa que, ao pressionar o botão "voltar" do 
+    dispositivo, o usuário será redirecionado à rota anterior.
+    Já o método pushReplacement substitui a rota atual pela nova rota, 
+    removendo a rota anterior da pilha de rotas do Navigator. Dessa forma, 
+    quando o usuário pressionar o botão "voltar" do dispositivo, ele não retornará à rota anterior, 
+    mas sim sairá do aplicativo, a menos que uma nova rota seja adicionada posteriormente.
+
+9)Qual a diferença entre pop e popAndPushNamed? Em que caso utilizamos cada uma?
+
+10)O que são e para que servem as rotas nomeadas?
+    As rotas nomeadas são uma forma de identificar uma rota de forma mais fácil e intuitiva no Flutter. 
+    Com elas, é possível associar um nome a uma rota e, em seguida, utilizar esse nome para navegar entre 
+    as diferentes telas do aplicativo.
+
+    Facilita a navegação, Evita erros de digitação, Facilita a manutenção do código 
+
+11) Em relação as rotas, deste as formas apresentadas, qual seria a melhor? Justifique.
+
+12) Em relação ao push e pashNamed: qual a diferença? os parametros são posicionais ou nomeados?
+
+13) REALIZAR ATIVIDADES QUE CONSTA EM: layout/lib/tela/primeira_pagina.dart
+*/
