@@ -47,7 +47,7 @@ void main() {
     print(soma(a: 10, b: 5)); // 15
     }
 
-    int soma({required int a, required int b}) {
+    int soma({int a, int b}) {
     return a + b;
     }
 
