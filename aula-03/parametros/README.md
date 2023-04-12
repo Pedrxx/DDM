@@ -1,6 +1,15 @@
 # Aula 03 - 24/02
 
+
 ## Parametros das Funções 
+
+### Conteúdo:
+
+* Funções - objetivo, sintaxe, assinatura, retorno, parâmetro;
+* Parâmetros posicionais;
+* Parâmetros posicionais não obrigatórios/valor padrão;
+* Parâmetros nomeados; 
+* Parâmetros nomeados obrigatórios;
 
 ### Funções 
 #### Blocos de código que realizam uma tarefa específica e podem ser chamadas várias vezes no programa. Elas podem receber parâmetros e retornar valores.
@@ -47,7 +56,7 @@ void main() {
     print(soma(a: 10, b: 5)); // 15
     }
 
-    int soma({int a, int b}) {
+    int soma({int a,  int b}) {
     return a + b;
     }
 

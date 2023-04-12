@@ -2,6 +2,15 @@
 
 ## Aula introdutória a linguagem Dart
 
+### Conteúdo:
+* Sintaxe básica da linguagem; 
+* Tipos de variáveis; 
+* Tipos dinâmicos;
+* const e final;
+* Conversão de dados;
+* Variáveis de Inferência;
+* Null Safery - qual motivo? quando utilizar? versão? conversão? vantagens?
+
 ### Tipos de Variáveis
 #### Em Dart, existem vários tipos de variáveis, incluindo int, double, String, bool e outros. Aqui está um exemplo de como declarar e usar variáveis em Dart:
 

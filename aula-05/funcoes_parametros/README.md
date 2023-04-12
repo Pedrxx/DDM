@@ -2,6 +2,14 @@
 
 ## Tipo de Funções 
 
+### Conteúdo:
+* Function Parameter (FP);
+* Chamando uma função com FP por meio de uma função nomeada;
+* Função anônima;
+* Chamando uma função com FP por meio de uma função anônima;
+* Diferenças entre função anônima e nomeada;
+* Arrow Function;
+
 ### Function Parameter (FP)
 #### Em Dart, uma função pode ter parâmetros que especificam os valores que a função espera receber como entrada. Isso permite que as funções sejam mais flexíveis e reutilizáveis.
 
