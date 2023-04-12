@@ -7,7 +7,7 @@
 * 📆 10/02 aula 01 [Fundamentos da Linguagem Dart](https://github.com/Pedrxx/DDM/tree/main/aula-01/fundamentos)
 * 📆 17/02 aula 02 [Funções: definição, conceitos, sintaxe, variantes, demonstração, exemplos e exercícios](https://github.com/Pedrxx/DDM/tree/main/aula-02/funcoes)
 * 📆 24/02 aula 03 [Parâmetros posicionais e nomeados, opcionais e obrigatórios](https://github.com/Pedrxx/DDM/tree/main/aula-03/parametros)
-* 📆 03/03 aula 04 [Funções: acoplamento, coesão e legibilidade](https://github.com/Pedrxx/DDM/tree/main/aula-04/funcoes/bin)
+* 📆 03/03 aula 04 [Funções: acoplamento, coesão e legibilidade](https://github.com/Pedrxx/DDM/tree/main/aula-04/funcoes)
 * 📆 10/03 aula 05 [Functions Parameters, Anonymous Functions e Arrow Functions](https://github.com/Pedrxx/DDM/tree/main/aula-05/funcoes_parametros)
 * 📆 16/03 aula 06 [Aula prática](https://github.com/Pedrxx/DDM/tree/main/aula-06/aula_pratica)
 * 📆 23/03 aula 07 [Widgets Flutter](https://github.com/Pedrxx/DDM/tree/main/aula-07/widgets)

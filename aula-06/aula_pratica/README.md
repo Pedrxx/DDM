@@ -8,8 +8,10 @@
 *  Apresentar projeto
 *  Terminar atividades atrasadas
 *  Ajudar colegas.
+
 ### 20h20 às 21h00
 *  Aula prática - Criar um projeto Dart e inserir o código que consta no repositório (https://github.com/heliokamakawa/-engenharia-de-software-2023-DDM/tree/main/aula%2003%20-%20classes)
+
 ### 21h10 às 22h30
 *  Prática 04
 *  Criar um projeto Flutter
