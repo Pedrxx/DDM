@@ -12,6 +12,7 @@
 * 📆 16/03 aula 06 [Aula prática](https://github.com/Pedrxx/DDM/tree/main/aula-06/aula_pratica)
 * 📆 23/03 aula 07 [Widgets Flutter](https://github.com/Pedrxx/DDM/tree/main/aula-07/widgets)
 * 📆 30/03 aula 08 [Manipulação & Navegação de Widgets](https://github.com/Pedrxx/DDM/tree/main/aula-08/navega%C3%A7%C3%A3o-widgets)
+* 📆 13/04 aula 09 [Layout Flutter e Projeto](https://github.com/Pedrxx/DDM/tree/main/aula-09/layout_flutter)
 
 ## Informações da Disciplina 
 
