@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
       ElevatedButton(child: const Text('Configuração'),
       onPressed: () {
         Route rota2 = MaterialPageRoute(builder: (context) => Config(),);
-      Navigator.pushNamed(context, 'configuracao');
+      Navigator.pushNamed(context, 'Configuracao');
       }),
 
       const Spacer(flex: 1),

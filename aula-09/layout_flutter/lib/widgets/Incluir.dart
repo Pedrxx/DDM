@@ -17,7 +17,7 @@ class Incluir extends StatelessWidget{
       builder: (ctx) => AlertDialog(
         title: Text("Cadastro Efetuado com sucesso!"),
         actions: <Widget>[
-          ElevatedButton(onPressed: () => Navigator.pop(ctx), child: Text("Ok"))
+          ElevatedButton(onPressed: () => Navigator.pushReplacementNamed(context, 'Gastos'), child: Text("Ok"))
         ],
       ),
     );
@@ -73,7 +73,7 @@ class Incluir extends StatelessWidget{
             ElevatedButton(child: const Text('Incluir'),
               onPressed: () {
                 Route rota3 = MaterialPageRoute(builder: (context) => Gastos(),);
-                  Navigator.pushReplacementNamed(context, 'Gastos');
+                  Navigator.pushNamed(context, 'Gastos');
                 showSuccessMessage(context);
             },),
           ],
