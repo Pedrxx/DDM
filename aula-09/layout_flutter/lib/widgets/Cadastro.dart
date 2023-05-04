@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:layout_flutter/widgets/Home.dart';
+import 'package:layout_flutter/widgets/Inicio.dart';
 
 import 'Login.dart';
 
@@ -19,7 +20,7 @@ class Cadastro extends StatelessWidget{
     builder: (ctx) => AlertDialog(
       title: Text("Cadastro Efetuado com sucesso!"),
       actions: <Widget>[
-        ElevatedButton(onPressed: () => Navigator.pushReplacementNamed(context, 'Login'), child: Text("Ok"))
+        ElevatedButton(onPressed: () => Navigator.pushReplacementNamed(context, '/'), child: Text("Ok"))
       ],
     ),
   );
@@ -63,8 +64,8 @@ class Cadastro extends StatelessWidget{
             SizedBox(height: 50,),
             ElevatedButton(child: const Text('Cadastrar'), 
               onPressed: () {
-                Route rota = MaterialPageRoute(builder: (context) => Login());
-              Navigator.pushNamed(context, 'Login');
+                Route rota = MaterialPageRoute(builder: (context) => Inicio());
+              Navigator.pushNamed(context, '/');
               showSuccessMessage(context);
               })
           ]),

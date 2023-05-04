@@ -1,6 +1,5 @@
 import 'package:layout_flutter/widgets/Alterar.dart';
 import 'package:layout_flutter/widgets/Config.dart';
-import 'package:layout_flutter/widgets/Excluir.dart';
 import 'package:layout_flutter/widgets/Gastos.dart';
 import 'package:layout_flutter/widgets/Home.dart';
 import 'package:layout_flutter/widgets/Incluir.dart';
@@ -27,7 +26,6 @@ class App extends StatelessWidget{
         Rotas.gastos : (context) => Gastos(),
         Rotas.incluir : (context) => Incluir(),
         Rotas.detalhes : (context) => Detalhes(),
-        Rotas.excluir : (context) => Excluir(),
         Rotas.alterar : (context) => Alterar()
 
       }

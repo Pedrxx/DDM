@@ -2,8 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:layout_flutter/widgets/Login.dart';
 import 'package:layout_flutter/widgets/Cadastro.dart';
 
+import 'Home.dart';
+
 class Inicio extends StatelessWidget {
-  const Inicio({super.key});
+  // const Inicio({super.key});
+  final _formKey = GlobalKey<FormState>();
+
+
+  final  _emailController = TextEditingController();
+  final  _senhaController = TextEditingController();
+
   
   @override
   Widget build(BuildContext context) {
@@ -28,20 +36,50 @@ class Inicio extends StatelessWidget {
               fontFamily: 'Futura',
               color: Colors.blue
             ),),
-          SizedBox(height: 30,),
+            SizedBox(height: 25,),
+            Container(
+              width: 300,
+              child: TextFormField(
+                controller: _emailController,
+                decoration: InputDecoration(
+                  labelText: 'Email'
+                ),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Campo obrigatório!';
+                  }
+                },
+              ),
+            ),
+            Container(
+              width: 300,
+              child: TextFormField(
+                controller: _senhaController,
+                decoration: InputDecoration(
+                  labelText: 'Senha'
+                ),
+                keyboardType: TextInputType.number,
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Digite um valor';
+                  }
+                },
+              ),
+            ),
+          SizedBox(height: 50,),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ElevatedButton(child: const Text('Login'),
               onPressed: () {
-                Route rota1 = MaterialPageRoute(builder: (context) => Login(),);
-              Navigator.pushNamed(context, 'Login');
+                Route rota1 = MaterialPageRoute(builder: (context) => Home(),);
+              Navigator.pushReplacementNamed(context, 'Home');
                 },),
               SizedBox(width: 100,),
               ElevatedButton(child: const Text('Cadastro'),
               onPressed: () {
                 Route rota2 = MaterialPageRoute(builder: (context) => Cadastro(),);
-              Navigator.pushNamed(context, 'Cadastro');
+              Navigator.pushReplacementNamed(context, 'Cadastro');
                 })
               ]
             )

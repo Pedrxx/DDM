@@ -31,4 +31,6 @@
 * Configurações 
 * Gastos
 
+### Observações 
+* Extrato de inclusão de gasto
 
