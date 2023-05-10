@@ -9,7 +9,9 @@
 ## Conteudo de hoje
 
 ### [Conteudo Form](https://docs.flutter.dev/cookbook/forms)
-### @@@@ Widgets
+
+### Widgets
+
 #### Quais widgets trabalhamos?
 * AppBar
 * Snackbar
@@ -21,15 +23,28 @@
 #### O que é e para que serve a key de uma widget? Qual a vantegem de ser tipado?
 * as keys em Flutter são usadas para identificar e rastrear widgets durante o processo de construção. A vantagem de serem tipadas é a verificação de tipo em tempo de compilação e a melhoria no desempenho do aplicativo.
 
-#### O que tem em comum? o que tem de diferente?
 #### Definir exemplos práticos e comentários de uso.
-* trabalhando com formulários;
+```dart
+  var keyForm = GlobalKey<FormState>();
 
-* como pegar valor de um campo;
+```
+
+#### Trabalhando com formulários;
+```dart
+@override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: Text('Cadastro')),
+      body: Form()
+    );
+  }
+```
+
+#### Como pegar valor de um campo;
 ```dart
         controller: _textOTNController,
 ```
-* restrições (validador, keyboardType, maxLength, inputFormatters, RegExp, outros)
+#### restrições (validador, keyboardType, maxLength, inputFormatters, RegExp, outros)
 ```dart
   validator: (valorDigitado) {
                 if(valorDigitado == null || valorDigitado.isEmpty) {
@@ -41,17 +56,20 @@
     maxLength: 2
     inputFormatters: [FilteringTextInputFormatter.digitsOnly]
 ```
-* O que é plugin? Para que serve?
-o que é? vantagens e desvantagens.
+
+#### O que é plugin? Para que serve? Vantagens e desvantagens.
 Os plugins são desenvolvidos para fornecer uma integração fácil e eficiente entre o código Flutter e as funcionalidades nativas de cada plataforma (Android e iOS). São produtivos e possibilitam a reutizilação de códigos, porem ficamos dependentes e temos que ter atenção na compatibilidade e estabilidade do plugin
 
- → O que é pub.dev? Como funciona?
-
+#### O que é pub.dev? Como funciona?
+O pub.dev é o repositório oficial de pacotes Flutter. Ele é mantido pela equipe do Flutter e é um lugar centralizado onde os desenvolvedores podem encontrar, compartilhar e publicar pacotes (incluindo plugins) para uso em projetos Flutter. 
  
- → Como escolher um plugin? Justifique.
+#### Como escolher um plugin?
 Ele dever ser compativel ao seu projeto, ter uma alta popularidade e ser ativamente mantido
 
- → exemplo de como utilizar/configurar o projeto com explicações passo a passo.
+#### exemplo de como utilizar/configurar o projeto com explicações passo a passo.
+Nesta aula foi utilizado o mask_text_input_formatter 2.4.0
+
+rodamos no termina > $ flutter pub add mask_text_input_formatter <
 
 
 
@@ -67,7 +85,7 @@ Reativo é validade enquanto digita
 Valido para todas as linguagens !!!
 
 
-### @@@@ atividade 1
+### atividade 1
 * definir 1 campo sobrenome e mostrar o nome e sobrenome no clique
 ```dart
 TextFormField(
@@ -106,7 +124,7 @@ TextFormField(
 
 * definir um DTO, inserir os valores dos campos nos atributos e no clique do botão mostrar o DTO
 
-### @@@@ atividade 2
+### atividade 2
 
 crie um novo formulário com os seguintes campos
 - 3 de sua preferência com restrições diferentes
@@ -147,9 +165,5 @@ TextFormField(
 ```
 - definir um DTO, inserir os valores dos campos nos atributos e no clique do botão mostrar o DTO
 
-O que é plugin? Para que serve?
- - o que é? vantagens e desvantagens.
- - O que é pub.dev? Como funciona?
- - Como escolher um plugin? Justifique.
- - exemplo de como utilizar/configurar o projeto com explicações passo a passo.
+
 
