@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'Alterar.dart';
+import 'package:layout_flutter/widgets/Alterar.dart';
 
 class Detalhes extends StatelessWidget{
   const Detalhes({super.key});

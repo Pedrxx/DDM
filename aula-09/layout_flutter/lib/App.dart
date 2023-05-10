@@ -1,14 +1,17 @@
 import 'package:layout_flutter/widgets/Alterar.dart';
+import 'package:layout_flutter/widgets/Categorias/Categorias.dart';
+import 'package:layout_flutter/widgets/Categorias/IncluirCategorias.dart';
 import 'package:layout_flutter/widgets/Config.dart';
+import 'package:layout_flutter/widgets/Detalhes.dart';
 import 'package:layout_flutter/widgets/Gastos.dart';
 import 'package:layout_flutter/widgets/Home.dart';
 import 'package:layout_flutter/widgets/Incluir.dart';
-import 'package:layout_flutter/widgets/detalhes.dart';
 import 'package:layout_flutter/widgets/inicio.dart';
 import 'package:layout_flutter/widgets/login.dart';
 import 'package:layout_flutter/widgets/cadastro.dart';
 import 'package:layout_flutter/rotas.dart';
 import 'package:flutter/material.dart';
+import 'package:layout_flutter/widgets/Categorias/ListarCategorias.dart';
 
 class App extends StatelessWidget{
   const App({super.key});
@@ -26,7 +29,10 @@ class App extends StatelessWidget{
         Rotas.gastos : (context) => Gastos(),
         Rotas.incluir : (context) => Incluir(),
         Rotas.detalhes : (context) => Detalhes(),
-        Rotas.alterar : (context) => Alterar()
+        Rotas.alterar : (context) => Alterar(),
+        Rotas.categorias : (context) => Categorias(),
+        Rotas.incluirCategorias : (context) => IncluirCategorias(),
+        Rotas.listarCategorias : (context) => ListarCategorias()
 
       }
     ) ;

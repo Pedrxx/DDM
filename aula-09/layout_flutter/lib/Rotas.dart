@@ -12,4 +12,7 @@ class Rotas {
   static const excluir = 'Excluir';
   static const inicio = '/';
   static const config = 'Configuracao';
+  static const listarCategorias = 'ListarCategorias'; 
+  static const incluirCategorias = 'IncluirCategorias'; 
+  static const categorias = 'Categorias'; 
 }

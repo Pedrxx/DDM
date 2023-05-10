@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:layout_flutter/widgets/Gastos.dart';
 import 'package:layout_flutter/widgets/Home.dart';
 
+const List<String> list = <String>['Posto de Gasolina', 'Mercado', 'PetShop', 'Barbeiro'];
+
 
 class Incluir extends StatelessWidget{
   //const Cadastro({super.key});
   final _formKey = GlobalKey<FormState>();
+
 
   final  _categoriaController = TextEditingController();
   final  _valorController = TextEditingController();

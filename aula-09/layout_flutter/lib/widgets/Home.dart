@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:layout_flutter/widgets/Config.dart';
 import 'package:layout_flutter/widgets/Gastos.dart';
 import 'package:layout_flutter/widgets/inicio.dart';
+import 'package:layout_flutter/widgets/Categorias/Categorias.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -22,6 +23,11 @@ class Home extends StatelessWidget {
       onPressed: () {
         Route rota2 = MaterialPageRoute(builder: (context) => Config(),);
       Navigator.pushNamed(context, 'Configuracao');
+      }),
+      ElevatedButton(child: const Text('Categorias'),
+      onPressed: () {
+        Route rota2 = MaterialPageRoute(builder: (context) => Categorias(),);
+      Navigator.pushNamed(context, 'Categorias');
       }),
 
       const Spacer(flex: 1),
