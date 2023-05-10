@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class Formulario extends StatelessWidget {
   var keyForm = GlobalKey<FormState>();
@@ -43,6 +44,7 @@ class Formulario extends StatelessWidget {
             TextFormField(
               keyboardType: TextInputType.number,
               maxLength: 2,
+              inputFormatters: [FilteringTextInputFormatter.digitsOnly],
               controller: _idadeController,
               decoration: InputDecoration(
                 labelText: 'Idade',
