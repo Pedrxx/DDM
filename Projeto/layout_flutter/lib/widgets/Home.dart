@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:layout_flutter/widgets/Categorias/ListarCategorias.dart';
 import 'package:layout_flutter/widgets/Config.dart';
 import 'package:layout_flutter/widgets/Gastos.dart';
 import 'package:layout_flutter/widgets/inicio.dart';
-import 'package:layout_flutter/widgets/Categorias/Categorias.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -26,8 +26,8 @@ class Home extends StatelessWidget {
       }),
       ElevatedButton(child: const Text('Categorias'),
       onPressed: () {
-        Route rota2 = MaterialPageRoute(builder: (context) => Categorias(),);
-      Navigator.pushNamed(context, 'Categorias');
+        Route rota3 = MaterialPageRoute(builder: (context) => ListarCategorias(),);
+      Navigator.pushNamed(context, 'ListarCategorias');
       }),
 
       const Spacer(flex: 1),

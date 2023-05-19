@@ -1,5 +1,4 @@
 import 'package:layout_flutter/widgets/Alterar.dart';
-import 'package:layout_flutter/widgets/Categorias/Categorias.dart';
 import 'package:layout_flutter/widgets/Categorias/IncluirCategorias.dart';
 import 'package:layout_flutter/widgets/Config.dart';
 import 'package:layout_flutter/widgets/Detalhes.dart';
@@ -30,7 +29,6 @@ class App extends StatelessWidget{
         Rotas.incluir : (context) => Incluir(),
         Rotas.detalhes : (context) => Detalhes(),
         Rotas.alterar : (context) => Alterar(),
-        Rotas.categorias : (context) => Categorias(),
         Rotas.incluirCategorias : (context) => incluirCategorias(),
         Rotas.listarCategorias : (context) => ListarCategorias()
 

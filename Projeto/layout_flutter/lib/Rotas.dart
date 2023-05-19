@@ -14,5 +14,5 @@ class Rotas {
   static const config = 'Configuracao';
   static const listarCategorias = 'ListarCategorias'; 
   static const incluirCategorias = 'IncluirCategorias'; 
-  static const categorias = 'Categorias'; 
+  static const menuCategorias = 'MenuCategorias'; 
 }
