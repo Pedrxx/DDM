@@ -33,7 +33,7 @@ class Home extends StatelessWidget {
       const Spacer(flex: 1),
       ElevatedButton(child: const Text('Sair'),
       onPressed: () {
-        Route rota3 = MaterialPageRoute(builder: (context) => Inicio(),);
+        Route rota4 = MaterialPageRoute(builder: (context) => Inicio(),);
       Navigator.pushReplacementNamed(context, '/');
       })
        ],

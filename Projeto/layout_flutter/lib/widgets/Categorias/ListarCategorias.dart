@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:layout_flutter/App.dart';
 import 'package:layout_flutter/database/daofake/Categorias/CatDaoFake.dart';
 import 'package:layout_flutter/view/dto/DtoCategoria.dart';
 import 'package:layout_flutter/view/interface/CategoriaInterfaceDAO.dart';
@@ -26,7 +25,7 @@ class _ListarCategorias extends State<ListarCategorias> {
       appBar: AppBar(title: const Text("Listar Categorias")),
       body: criarLista(context),
       floatingActionButton: BotaoAdicionar(
-        acao: () => Navigator.pushNamed(context, Rotas.incluirCategorias)),
+        acao: () => Navigator.pushNamed(context, Rotas.formCategorias)),
       bottomNavigationBar: const BarraNavegacao(),
         floatingActionButtonLocation:
             FloatingActionButtonLocation.centerDocked
@@ -60,11 +59,11 @@ class _ListarCategorias extends State<ListarCategorias> {
     return ItemLista(
         categoria: categoria,
         alterar: () {
-          Navigator.pushNamed(context, Rotas.menuCategorias, arguments: categoria)
+          Navigator.pushNamed(context, Rotas.formCategorias, arguments: categoria)
               .then((value) => buscarCategorias());
         },
         detalhes: () {
-          Navigator.pushNamed(context, Rotas.incluirCategorias);
+          // Navigator.pushNamed(context, Rotas.incluirCategorias);
         },
         excluir: () {
           dao.excluir(categoria.id);

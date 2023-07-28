@@ -8,27 +8,38 @@ import '../../../view/interface/CategoriaInterfaceDAO.dart';
 class CategoriaDAOFake implements CategoriaInterfaceDAO{
   @override
   Future<DtoCategoria> consultar(dynamic id) {
-    return Future.value(categorias[id-1]);
+    return Future.value(categoriaDados[id-1]);
   }
 
   @override
   Future<List<DtoCategoria>> consultarTodos() {
-    // TODO: implement consultarTodos
-    throw UnimplementedError();
+    return Future.value((categoriaDados));
   }
 
   @override
   bool excluir(id) {
-    // TODO: implement excluir
-    throw UnimplementedError();
+    print('excluir ${categoriaDados[id-1]}');
+    categoriaDados.remove(categoriaDados[id-1]);
+    return true;
   }
 
   @override
-  ListarCategorias salvar(DtoCategoria categorias) {
-    // TODO: implement salvar
-    throw UnimplementedError();
+  DtoCategoria salvar(DtoCategoria dtoCategoria) {
+    if(dtoCategoria.id == null){
+      dtoCategoria = DtoCategoria( 
+        id: categoriaDados.length,
+        nome: dtoCategoria.nome,
+        desc: dtoCategoria.desc,
+        prioridade: dtoCategoria.prioridade
+      );
+      categoriaDados.add(dtoCategoria);
+      print("teste ${categoriaDados.length}");
+    }else {
+      int i = (dtoCategoria.id as int) - 1;
+      categoriaDados[i] = dtoCategoria;
+    }
+    print(dtoCategoria);
+    return dtoCategoria;
+
   }
-
-  
-
 }

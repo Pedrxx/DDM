@@ -1,5 +1,4 @@
-import 'package:layout_flutter/widgets/Incluir.dart';
-
+// ignore: file_names
 class Rotas {
   static const login = 'Login';
   static const cadastro = 'Cadastro';
@@ -15,4 +14,6 @@ class Rotas {
   static const listarCategorias = 'ListarCategorias'; 
   static const incluirCategorias = 'IncluirCategorias'; 
   static const menuCategorias = 'MenuCategorias'; 
+  static const formCategorias = 'FormCategorias';
+
 }
