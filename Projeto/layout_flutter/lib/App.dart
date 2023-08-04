@@ -1,37 +1,26 @@
-import 'package:layout_flutter/widgets/Alterar.dart';
-import 'package:layout_flutter/widgets/Categorias/FormCategorias.dart';
-import 'package:layout_flutter/widgets/Config.dart';
-import 'package:layout_flutter/widgets/Detalhes.dart';
-import 'package:layout_flutter/widgets/Gastos.dart';
-import 'package:layout_flutter/widgets/Home.dart';
-import 'package:layout_flutter/widgets/Incluir.dart';
-import 'package:layout_flutter/widgets/inicio.dart';
-import 'package:layout_flutter/widgets/login.dart';
-import 'package:layout_flutter/widgets/cadastro.dart';
+
+import 'package:layout_flutter/telas/Cadastro.dart';
+import 'package:layout_flutter/telas/Home.dart';
+import 'package:layout_flutter/telas/Inicio.dart';
 import 'package:layout_flutter/rotas.dart';
 import 'package:flutter/material.dart';
-import 'package:layout_flutter/widgets/Categorias/ListarCategorias.dart';
+import 'package:provider/provider.dart';
 
-class App extends StatelessWidget{
-  const App({super.key});
+import 'conexao/credenciais.dart';
 
+class App extends StatelessWidget {
   @override
-  Widget build(BuildContext context){
-    return MaterialApp(
-      title: 'Flutter Demo',
-      routes: {
-        Rotas.inicio : (context) => Inicio(),
-        Rotas.login : (context) => Login(),
-        Rotas.home : (context) => Home(),
-        Rotas.cadastro : (context) => Cadastro(),
-        Rotas.config : (context) => Config(),
-        Rotas.gastos : (context) => Gastos(),
-        Rotas.incluir : (context) => Incluir(),
-        Rotas.detalhes : (context) => Detalhes(),
-        Rotas.alterar : (context) => Alterar(),
-        Rotas.listarCategorias : (context) => ListarCategorias(),
-        Rotas.formCategorias :(context) => FormCategorias()
-      }
-    ) ;
+  Widget build(BuildContext context) {
+    return ChangeNotifierProvider(
+      create: (context) => UserCredentials(), 
+      child: MaterialApp(
+        title: 'Flutter Demo',
+        routes: {
+          Rotas.inicio : (context) => Inicio(),
+          Rotas.home : (context) => Home(),
+          Rotas.cadastro : (context) => Cadastro(),
+        }
+      ) 
+    );
   }
 }
