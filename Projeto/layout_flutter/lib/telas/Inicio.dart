@@ -33,7 +33,7 @@ class Inicio extends StatelessWidget {
             height: 200, // Ajuste a altura conforme necessário
           ),
           Text(
-            'Ao sistema de chamados Prats.',
+            'Sistema de chamados Prats.',
             style: TextStyle(
               fontSize: 20,
               fontFamily: 'Futura',

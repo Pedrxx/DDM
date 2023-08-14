@@ -64,7 +64,7 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     UserInterfacaDAO dao = UserDAO();
-    User usuario = dao.consultarPorNome(Provider.of<UserCredentials>(context).nome);
+    User usuario = dao.consultarPorNome(Provider.of<UserCredentials>(context).nome) as User;
 
     List<Ticket> _tickets = verificaListagem(usuario);
     
@@ -176,7 +176,7 @@ class DetalhesTicket extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    User usuarioTickek = dao.consultar(ticket.idUser!);
+    User usuarioTickek = dao.consultar(ticket.idUser!) as User;
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xFF0057A6),
@@ -288,7 +288,7 @@ class AtendimentosTicket extends StatelessWidget {
   UserDAO daoUser = UserDAO();
 
   bool validaTecnico(usuario) {
-    var user = daoUser.consultar(usuario);
+    var user = daoUser.consultar(usuario) as User;
 
     if (user.acesso == 'Tecnico' || user.acesso == 'Admin') {return true;} else {return false;}
   }

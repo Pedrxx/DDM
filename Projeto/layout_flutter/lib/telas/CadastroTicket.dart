@@ -35,7 +35,7 @@ class _CadastroTicketsState extends State<CadastroTicket> {
   @override
   Widget build(BuildContext context) {
     UserInterfacaDAO daoUser = UserDAO();
-    User usuario = daoUser.consultarPorNome(Provider.of<UserCredentials>(context).nome);
+    User usuario = daoUser.consultarPorNome(Provider.of<UserCredentials>(context).nome) as User;
     
     return Scaffold(
       appBar: AppBar(

@@ -121,7 +121,7 @@ class _PerfilAlteraState extends State<PerfilAltera> {
   }
   User _alteraUser() {
     UserInterfacaDAO dao = UserDAO();
-    User user = dao.consultarPorNome(_nomeController.text);
+    User user = dao.consultarPorNome(_nomeController.text) as User;
     return User(
       id: user.id,
       nome: _nomeController.text,
